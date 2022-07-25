@@ -10,19 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6fa95c7078.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
         <h3>Photography Studio</h3>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#content">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <div class="home">
+    <div class="home" id="home">
         <div class="home-wrapper">
             <div class="modern-header">
                 <div class="modern-header-wrapper">
@@ -46,19 +47,23 @@
     </div>
     <main>
         <div id="content">
-            <article class="photos-album">
-                <div class="modern-header-photos">
-                    <div class="title-photo">
-                        <h3>Photos Album</h3>
+            <article>
+                <div class="photos-album">
+                    <div class="modern-header-photos">
+                        <div class="title-photo">
+                            <h3>Photos Album</h3>
+                        </div>
+                        <div class="desc-photo">
+                            <p>With different tricks and creativities, we present to you our photo album.</p>
+                        </div>
                     </div>
-                    <div class="desc-photo">
-                        <p>With different tricks and creativities, we present to you our photo album.</p>
+                    <div class="album-container">
+                        <img id="photos" class="photos" src="assets/michele-caliani-iLAAT1E-H_8-unsplash.jpg" alt="">
+                        <img class="photos" src="assets/mohammad-khaksarmadani-4FDsNcCR8iQ-unsplash.jpg" alt="">
+                        <img class="photos" src="assets/kai-cheng-MCptVsXIsPg-unsplash.jpg" alt="">
+                        <img class="photos" src="assets/stormseeker-rX12B5uX7QM-unsplash.jpg" alt="">
                     </div>
                 </div>
-                <img id="photos" class="photos" src="assets/michele-caliani-iLAAT1E-H_8-unsplash.jpg" alt="">
-                <img class="photos" src="assets/mohammad-khaksarmadani-4FDsNcCR8iQ-unsplash.jpg" alt="">
-                <img class="photos" src="assets/kai-cheng-MCptVsXIsPg-unsplash.jpg" alt="">
-                <img class="photos" src="assets/stormseeker-rX12B5uX7QM-unsplash.jpg" alt="">
             </article>
             <article class="team">
                 <div class="team-wrapper">
@@ -166,5 +171,41 @@
             </div>
         </aside>
     </main>
+    <footer>
+        <div class="footer-navigation" id="contact">
+            <div class="footer-title">
+                <h1>Photography Studio</h1>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#content">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-picture">
+            <div class="footer-picture-container">
+                <img src="assets/rowan-neal-_38q7VD-OfA-unsplash.jpg" alt="">
+            </div>
+        </div>
+        <div class="contact-us-container">
+            <div class="contact-us-wrapper">
+                <div class="contactus-title">
+                    <h1>Where Do You Can Find Us?</h1>
+                </div>
+                <div class="contact">
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>example@example.com</p>
+                    </div>
+                    <div class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>@wearephotography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
