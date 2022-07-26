@@ -25,12 +25,20 @@ body{
 header{
     font-family: 'Kurale', serif;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     padding: 20px;
 }
 
-header h3{
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-responsive{
+    display: none;
+}
+
+nav h3{
     font-size: 24px;
     margin: 0;
 }
@@ -55,6 +63,9 @@ nav ul li a{
 nav ul li a:hover{
     color: rgb(255, 145, 0);
     transition: 0.3s;
+}
+.burger-icon-container i{
+    font-size: 25px;
 }
 
 .home{
@@ -360,6 +371,10 @@ footer{
         margin: 5px 5px;
     }
 
+    #photos{
+        margin: 5px;
+    }
+
     .team-member{
         justify-content: center;
         flex-wrap: wrap;
@@ -380,5 +395,67 @@ footer{
     footer{
         flex-wrap: wrap;
         justify-content: flex-start;
+    }
+}
+
+@media(max-width: 620px){
+    nav ul{
+        display: none;
+    }
+
+
+}
+
+@media(max-width: 535px){
+    .modern-header .title{
+        width: 100%;
+        font-size: 24px;
+        display: contents;
+    }
+
+    .modern-header-wrapper .desc{
+        width: 100%;
+    }
+
+    .modern-header-wrapper .sub-title{
+        font-size: 20px;
+    }
+
+    aside{
+        padding: 20px;
+    }
+    
+    aside .img-container img{
+        width: 100%;
+    }
+    .aside-wrapper .aside-desc{
+        font-size: 20px;
+
+    }
+
+    .icon-aside-container i{
+        font-size: 25px;
+    }
+    
+    .photos-album .photos{
+        width: 100%;
+        height: auto;
+    }
+    
+    .img-team-wrapper img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .team-identity p{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 486px){
+
+
+    .aside-desc p{
+        font-size: 20px;
     }
 }
