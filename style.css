@@ -64,6 +64,11 @@ nav ul li a:hover{
     color: rgb(255, 145, 0);
     transition: 0.3s;
 }
+
+.burger-icon-container{
+    display: none;
+}
+
 .burger-icon-container i{
     font-size: 25px;
 }
@@ -403,7 +408,9 @@ footer{
         display: none;
     }
 
-
+    .burger-icon-container{
+        display: contents;
+    }
 }
 
 @media(max-width: 535px){
@@ -436,7 +443,7 @@ footer{
     .icon-aside-container i{
         font-size: 25px;
     }
-    
+
     .photos-album .photos{
         width: 100%;
         height: auto;
