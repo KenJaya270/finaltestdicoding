@@ -16,17 +16,29 @@
         <nav>
             <h3>Photography Studio</h3>
             <ul>
-                <div class="x-container">
-                    <input type="checkbox">
-                    <i class="fa-solid fa-x"></i>
-                </div>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#content">About</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
-            <div class="burger-icon-container">
-                <input type="checkbox">
+            <div class="burger-icon-container" onclick="sideBarOperation()">
                 <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-responsive" id="sideBar">
+                <div class="nav-responsive-wrapper">
+                    <div class="responsive-nav-title">
+                        <div class="navbar-exit-container" onclick="sideBarOperation()">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                        <h1>Photography Studio</h1>
+                    </div>
+                    <div class="responsive-nav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#content">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="home" >

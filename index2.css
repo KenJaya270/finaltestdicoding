@@ -51,21 +51,27 @@ body{
     font-family: 'poppins', serif;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
 }
 
 .responsive-nav ul{
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .responsive-nav ul li{
     list-style-type: none;
+    text-align: center;
+    margin: 25px 0;
 }
 
 .responsive-nav ul li a{
     text-decoration: none;
     font-size: 25px;
     font-weight: bolder;
+    color: #101010;
 }
 
